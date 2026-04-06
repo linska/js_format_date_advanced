@@ -20,7 +20,7 @@ function formatDate(date, fromFormat, toFormat) {
     dateParts[key] = value;
 
     if (key === 'YYYY') {
-      dateParts.YY = value.slice(2);
+      dateParts.YY = value.slice(-2);
     }
 
     if (key === 'YY') {
